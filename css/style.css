@@ -793,12 +793,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #call-to-action h3 {
   color: #fff;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#call-to-action h4 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 800;
 }
 
 #call-to-action p {
   color: #fff;
+  font-size: 18px;
 }
 
 #call-to-action .cta-btn {
