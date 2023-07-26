@@ -1,9 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/posyandu-alamanda:$COMMIT_SHA', '.']
+    args: ['build', '-t', 'gcr.io/alamanda-394003/posyandu-alamanda', '.']
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/posyandu-alamanda:$COMMIT_SHA']
+    args: ['push', 'gcr.io/alamanda-394003/posyandu-alamanda']
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
@@ -12,10 +12,10 @@ steps:
       - 'deploy'
       - 'posyandu-alamanda'
       - '--image'
-      - 'gcr.io/$PROJECT_ID/posyandu-alamanda:$COMMIT_SHA'
+      - 'gcr.io/alamanda-394003/posyandu-alamanda'
       - '--platform'
       - 'managed'
       - '--region'
       - 'us-central1'
     images:
-      - 'gcr.io/$PROJECT_ID/posyandu-alamanda:$COMMIT_SHA'
+      - 'gcr.io/alamanda-394003/posyandu-alamanda'
