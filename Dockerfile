@@ -1,13 +1,17 @@
 # Use the Nginx base image
-FROM nginx:alpine
+FROM nginx:latest
 
 COPY nginx.conf /etc/nginx/conf.d/configfile.template
 
 # Set the working directory in the container
-WORKDIR /usr/share/nginx/html
 
 # Copy the HTML, CSS, JS files to the container's working directory
-COPY . /usr/share/nginx/html/
+COPY index.html /usr/share/nginx/html/index.html
+COPY contactform /usr/share/nginx/html
+COPY css /usr/share/nginx/html
+COPY img /usr/share/nginx/html
+COPY js /usr/share/nginx/html
+COPY lib /usr/share/nginx/html
 
 ENV PORT 8080
 ENV HOST 0.0.0.0
