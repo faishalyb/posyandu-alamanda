@@ -5,12 +5,12 @@ FROM nginx:latest
 WORKDIR /usr/share/nginx/html
 
 # Copy the HTML, CSS, JS files to the container's working directory
-COPY index.html .
-COPY css/ css/
-COPY js/ js/
-COPY contactform/ contactform/
-COPY lib/ lib/
-COPY img/ img/
+COPY index.html /usr/share/nginx/html/
+COPY css/ /usr/share/nginx/html/css/
+COPY js/ /usr/share/nginx/html/js/
+COPY contactform/ /usr/share/nginx/html/contactform/
+COPY lib/ /usr/share/nginx/html/lib/
+COPY img/ /usr/share/nginx/html/img/
 
 EXPOSE 80
 
