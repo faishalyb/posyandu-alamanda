@@ -12,4 +12,6 @@ COPY contactform/ contactform/
 COPY lib/ lib/
 COPY img/ img/
 
+EXPOSE 80
+
 CMD ["nginx", "-g", "daemon off;"]

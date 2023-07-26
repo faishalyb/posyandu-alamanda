@@ -1,8 +1,10 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/alamanda-394003/posyandu-alamanda', '.']
+
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/alamanda-394003/posyandu-alamanda']
+
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
@@ -11,6 +13,8 @@ steps:
       - 'posyandu-alamanda'
       - '--image'
       - 'gcr.io/alamanda-394003/posyandu-alamanda'
+      - '--platform'
+      - 'managed'
       - '--region'
       - 'us-central1'
     images:
