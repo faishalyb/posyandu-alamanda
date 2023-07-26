@@ -9,8 +9,9 @@ steps:
       - 'run'
       - 'deploy'
       - 'posyandu-alamanda'
-      - '--image=gcr.io/alamanda-394003/posyandu-alamanda'
-      - '--platform=managed'
-      - '--region=us-central1'
+      - '--image'
+      - 'gcr.io/alamanda-394003/posyandu-alamanda'
+      - '--region'
+      - 'us-central1'
     images:
       - 'gcr.io/alamanda-394003/posyandu-alamanda'
