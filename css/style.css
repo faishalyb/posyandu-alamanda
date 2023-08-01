@@ -428,18 +428,18 @@ h6 {
 }
 
 
-.register {
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
+.reg-adm-button {
+  /*font-weight: 600;*/
+  /*font-size: 14px;*/
+  /*text-transform: uppercase;*/
   border-radius: 0;
-  padding: 10px 24px;
+  /*padding: 10px 24px;*/
   background: #18d26e;
   color: white;
   list-style: none;
 }
 
-.register:hover {
+.reg-adm-button:hover {
   background: #FFFFFF;
   color: #18d26e;
 }
