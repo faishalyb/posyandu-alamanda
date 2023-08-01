@@ -393,7 +393,7 @@ img {
 /* Nav Meu Styling */
 
 .nav-menu a {
-  padding: 0 8px 10px 8px;
+  padding: 10px;
   text-decoration: none;
   display: inline-block;
   color: #fff;
