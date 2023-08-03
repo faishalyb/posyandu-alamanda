@@ -44,7 +44,7 @@ def send_email(feedback_data):
     smtp_username = 'faishalyb12@gmail.com'
     smtp_password = 'eezseagzkjzffmlb'
     sender_email = 'faishalyb12@gmail.com'
-    receiver_email = 'faishalyusuf@gmail.com'
+    receiver_email = 'faishalyb12@gmail.com'
     subject = 'Feedback'
     message = f"Email: {feedback_data['email']}\n\nSubject: {feedback_data['subject']}\n\nMessage: {feedback_data['message']}"
 
